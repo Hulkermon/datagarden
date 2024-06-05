@@ -1,0 +1,18 @@
+legend {
+  position: absolute;
+  right: 20px;
+  bottom: 120px;
+  z-index: 1;
+}
+
+.down-notice {
+  background: #2b2b2b;
+  color: #ffd900;
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+
+  .disclaimer {
+    color: #8f8f8f;
+  }
+}

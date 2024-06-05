@@ -1,0 +1,15 @@
+<div *ngIf="hasAccess">
+  <legend [layer]="this.getActiveLayer()"></legend>
+  <mapbox-viewer></mapbox-viewer>
+</div>
+
+<div class="down-notice" *ngIf="!hasAccess">
+  <h1>⚠ ⚠ ⚠ As an additional safety measure, please enter the Konami code ⚠ ⚠ ⚠</h1>
+
+  <p class="disclaimer">Konami Code:<br>
+    {{ konamiCode.join(' ') }}
+  </p>
+  <p class="disclaimer">Your Input:<br>
+    <span *ngFor="let key of keySequence"> {{key}} </span>
+  </p>
+</div>

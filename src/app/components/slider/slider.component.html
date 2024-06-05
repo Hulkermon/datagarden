@@ -1,0 +1,9 @@
+<mat-slider
+  *ngIf="this.layer.variations"
+  [max]="this.layer.variations.length - 1"
+  [step]="1"
+  [discrete]="true"
+  [showTickMarks]="true"
+  color="whatDoIputHere">
+  <input matSliderThumb [(ngModel)]="value" (valueChange)="emitOutput($event)">
+</mat-slider>

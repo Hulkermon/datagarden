@@ -1,0 +1,26 @@
+<!-- Layer Control -->
+<nav id="layer-control" #layerControl>
+  <a *ngFor="let layer of allLayers" [id]="layer.id">{{layer.name}}</a>
+</nav>
+
+<!-- Slider -->
+<div id="layer-variation-text" *ngIf="currentActiveLayer.variations">
+  <span>{{ currentActiveLayer.variations![currentLayerVariationIndex] }}</span>
+</div>
+<slider [layer]="this.currentActiveLayer" (onChange)="this.handleSliderChange($event)">
+</slider>
+
+<!-- Presentation Button -->
+<div id="presentation-button">
+  <button mat-raised-button color="dark" (click)="togglePresentation()">{{ presentationButtonText }}</button>
+</div>
+
+<!-- Map -->
+<div id="map"></div>
+
+<!-- Graph -->
+<div #popupContainer class="popup-container">
+  <div *ngIf="graph">
+    <plotly-plot [data]="graph.data" [layout]="graph.layout" [config]="{ displayModeBar: false, staticPlot: true }"></plotly-plot>
+  </div>
+</div>
