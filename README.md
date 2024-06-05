@@ -3,10 +3,12 @@
 A fun little Data Visualization project based on a bunch of locational data on swiss citizens.
 
 ### How to run:
-1. Install [node.js](https://nodejs.org)
-2. Run `corepack enable` to install yarn (may require admin privileges)
-3. Run `yarn` in root directory
-4. Serve web-app with `yarn start`
+1. 🔧 Install [node.js](https://nodejs.org)
+2. 📦 Run `corepack enable` to install yarn (may require admin privileges)
+3. 🧶 Run `yarn` in root directory 
+4. 🚀 Serve web-app with `yarn start` 
+5. ⏳ Wait for the app to launch 
+6. 👀 Check it out on [localhost:4200](http://localhost:4200)
 
 If the commands `corepack` or `yarn` aren't found, remember to restart your shell after the first two steps.
 
